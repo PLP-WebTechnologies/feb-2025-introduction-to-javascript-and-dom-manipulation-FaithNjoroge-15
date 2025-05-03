@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic List Manipulation</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health & Wellness Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>Dynamic List Management</h1>
-        <button id="add-item-btn">Add Item</button>
-        <button id="remove-item-btn">Remove Item</button>
-        
-        <ul id="item-list">
-            <!-- List items will be dynamically added here -->
-        </ul>
-    </div>
+  <header>
+    <h1>Health & Wellness Dashboard</h1>
+    <p>Stay healthy, stay fit!</p>
+  </header>
 
-    <script src="script.js"></script>
+  <section id="nutritionSection">
+    <h2>Today's Nutritional Tip</h2>
+    <p id="nutritionTip">Eating fruits and vegetables daily can boost your health.</p>
+    <button id="changeNutritionTip">Get a New Tip</button>
+  </section>
+
+  <section id="exerciseSection">
+    <h2>Exercise of the Day</h2>
+    <p id="exerciseTip">Today's recommended exercise: 30 minutes of jogging.</p>
+    <button id="changeExerciseTip">Change Exercise</button>
+  </section>
+
+  <section id="wellnessSection">
+    <h2>Wellness Motivation</h2>
+    <button id="motivationButton">Add Wellness Motivation</button>
+  </section>
+
+  <footer>
+    <p>Health made simple. Stay active and eat well.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
