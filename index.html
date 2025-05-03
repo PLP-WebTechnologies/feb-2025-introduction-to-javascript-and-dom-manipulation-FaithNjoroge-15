@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Health & Wellness Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <header>
+        <h1>Health Tracker</h1>
+        <p>Track your daily health progress.</p>
+    </header>
+    
+    <section>
+        <div id="status-section">
+            <h2 id="status-title">Current Status:</h2>
+            <p id="status-text">Your health data will appear here.</p>
+        </div>
+        <button id="toggleHealthBtn">Toggle Health Data</button>
+    </section>
+    
+    <section>
+        <h2>Daily Health Tips</h2>
+        <ul id="health-tips">
+            <li>Drink plenty of water.</li>
+            <li>Exercise regularly.</li>
+            <li>Eat balanced meals.</li>
+        </ul>
+        <button id="addTipBtn">Add New Tip</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Health Tracker. All rights reserved.</p>
+    </footer>
 
-  <header>
-    <h1>Health & Wellness Dashboard</h1>
-    <p>Stay healthy, stay fit!</p>
-  </header>
-
-  <section id="nutritionSection">
-    <h2>Today's Nutritional Tip</h2>
-    <p id="nutritionTip">Eating fruits and vegetables daily can boost your health.</p>
-    <button id="changeNutritionTip">Get a New Tip</button>
-  </section>
-
-  <section id="exerciseSection">
-    <h2>Exercise of the Day</h2>
-    <p id="exerciseTip">Today's recommended exercise: 30 minutes of jogging.</p>
-    <button id="changeExerciseTip">Change Exercise</button>
-  </section>
-
-  <section id="wellnessSection">
-    <h2>Wellness Motivation</h2>
-    <button id="motivationButton">Add Wellness Motivation</button>
-  </section>
-
-  <footer>
-    <p>Health made simple. Stay active and eat well.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
