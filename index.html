@@ -1,39 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Tracker</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Agriculture Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        #container {
+            margin-top: 20px;
+        }
+
+        .new-task {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        #taskMessage {
+            color: #FF6347;
+            font-size: 1.2em;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .task-list {
+            margin-top: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .task-list li {
+            padding: 8px;
+            background-color: #e0f7fa;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>Health Tracker</h1>
-        <p>Track your daily health progress.</p>
+        <h1>Agriculture Management System</h1>
     </header>
-    
-    <section>
-        <div id="status-section">
-            <h2 id="status-title">Current Status:</h2>
-            <p id="status-text">Your health data will appear here.</p>
-        </div>
-        <button id="toggleHealthBtn">Toggle Health Data</button>
-    </section>
-    
-    <section>
-        <h2>Daily Health Tips</h2>
-        <ul id="health-tips">
-            <li>Drink plenty of water.</li>
-            <li>Exercise regularly.</li>
-            <li>Eat balanced meals.</li>
-        </ul>
-        <button id="addTipBtn">Add New Tip</button>
-    </section>
-    
+
+    <main>
+        <section id="container">
+            <p id="taskMessage">Welcome to the farming management system. Track and manage farming tasks!</p>
+
+            <button id="addTaskButton">Add New Task</button>
+            <button id="removeTaskButton">Remove Last Task</button>
+
+            <h2>Current Tasks</h2>
+            <ul id="taskList" class="task-list"></ul>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2025 Health Tracker. All rights reserved.</p>
+        <p>Powered by your farming team. Keep the fields green!</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
